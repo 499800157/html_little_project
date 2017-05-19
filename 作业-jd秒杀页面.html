@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>京东秒杀-正品保证、天天低价、限时限量</title>
+		<link rel="stylesheet" href="初始化.css"/>
+		<style type="text/css">
+			body{				
+				background-color:#FFFFFF;			
+			}	
+			body>div{
+				margin:0 auto;			
+				width:1150px;
+			}
+			/*主体分为上下两部分，这是上部分*/
+			.top-tab{
+				height:32px;
+				background-color: #F1F1F1;
+							
+			}
+			.top-tab>div{
+				margin-left:50px;
+				height:32px;
+				line-height: 32px;
+			}
+			.top-tab>ul{
+				margin-left:140px;			
+				height:32px;
+				line-height: 32px;
+			}
+			.top-tab>ul,.top-tab>ul>li,.top-tab>div{
+				display:inline-block;
+			}
+			
+			/*主体分为上下两部分，这是下部分*/
+
+			/*这是下部分中的搜索区域*/
+			.search{
+				height:140px;
+				border-bottom:2px solid #D8312B;
+				padding-top:30px;
+			}
+			.shop-car{
+				position:relative;			
+				height:32px;
+				width:150px;
+				line-height: 34px;
+				vertical-align: top;
+				text-align: center;
+				margin-top:26px;
+				margin-left: 18px;
+				border:1px solid #E3E4E6;
+				background-color:white;
+				margin-top:0px;
+				margin-left:20px;
+			}
+			.shop-car>div{				
+				vertical-align: top;			
+			}			
+			.search *{
+				vertical-align: middle;
+			}
+			.search>b{
+				font-size:30px;
+				color:#3A3A3A;
+			}
+			.search>img{
+				margin-left:50px;
+			}
+			.search [type=text]{
+				width:400px;height:30px;
+				vertical-align: top;
+				margin-left:20px;
+			
+			}
+			.search [type=submit]{
+				height:33px;width:50px;
+				background-color: red;
+				border:1px solid red;
+				color:white;
+				font-size:16px;
+				text-align: center;					
+			}
+			.search>form,.shop-car{
+				display: inline-block;
+			}
+			.search>select{
+				border:1px solid #E2E2E2;
+			}
+			.shop-legend{			
+				width:308px;
+				height:70px;
+				position:absolute;
+				top:34px;
+				right:0px;	
+				color:white;
+				border:1px solid #999999;
+				font-size: 14px;
+				display:none;
+				color:#999999;		
+			}
+			.shop-legend>span{
+				display: inline-block;
+				vertical-align: top;
+				margin-top:15px;
+			}
+			.shop-car:hover>.shop-legend{
+				display:block;
+				background-color:white;
+			} 
+			.else-search{		
+				margin-left:415px;			
+				font-size: 12px;
+				color:#999999;
+				vertical-align: top;
+				margin-top:-8px;	
+			}
+			.else-search>li:nth-child(1){
+				color:#978591;	
+				font-weight: bold;
+			}
+			.else-search,.else-search>li{
+				display:inline-block;
+			}
+			.nav-group{
+				vertical-align: bottom;
+				margin-top:33px;
+				margin-left:50px;
+			}
+			.nav-group>li{
+				display:inline-block;
+				font-size:16px;
+				
+			}
+			.nav-group>li>a{
+				color:#60676D;
+			}
+			.nav-group>li:nth-child(1)>a{
+				font-size:25px;
+				background:red;				
+				font-weight:bold;
+			}
+			.nav-group>li:nth-child(1)>a{
+				color:white;
+			}
+			.nav-group>li:nth-child(2){
+				font-size:25px;						
+				font-weight:bold;
+			}
+			.nav-group>li:nth-child(2)>a{
+				color:black;
+			}
+			/*这是下部分中的商品区域*/
+			.good{
+				width:1150px;
+
+			}
+			.title-miaosha{
+				background:url(img/秒杀页面01.png) repeat-x -18px 0;
+				background-size:contain;
+				height:72px;
+			}
+			.timeline-list{
+				height:60px;
+				margin-left:50px;
+			}
+			.timeline-list>ul>li{
+				display: inline-block;
+				width:200px;
+				margin:0;
+				padding:0px;
+			}
+			.timeline-list>ul>li:nth-child(1){
+				background:red;
+				color:white;
+				font-weight:bold;
+				vertical-align: top;
+				
+			}
+			.timeline-list>ul>li:nth-child(1)>div{
+				display:inline-block;					
+			}
+			
+			.timeline-list>ul>li>div{
+				display:inline-block;
+				vertical-align: top;
+				margin-top:20px;
+				font-weight: bold;
+				margin-left:12px;
+			}
+			#first-list *{
+				position:relative;
+				top:-10px;	
+				
+			}
+			.goods-legend>ul>li{
+				width:200px;
+				height:300px;
+				display: inline-block;
+				margin-left: 50px;
+				vertical-align: top;
+			}
+			.goods-legend>ul>li>img{
+				width:200px;
+				height:250px;
+				margin-right:5px;
+			}
+			.goods-legend>ul>li>span{
+				font-size:14px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="top-tab">
+			<div>返回京东首页</div>
+			<ul>
+				<li>你好，请登录 <span>免费注册</span></li> |
+				<li>我的订单</li> |
+				<li>我的京东</li> |
+				<li>京东会员</li> |
+				<li>企业采购</li> |
+				<li>客户服务</li> |
+				<li>网站导航</li> |
+				<li>手机京东</li> 	 			
+			</ul>
+		</div>
+		<div class="container">
+			<div class="search">
+				<img src="img/登陆页面截图01.png">
+				<b>秒杀</b>
+				<select name="">
+					<option value="">全部分类</option>
+				</select>
+				<form>
+					<input type="text" name="" placeholder="生鲜"><!--
+					--><input type="submit" name="" value="搜索">
+				</form>
+				<div class="shop-car">
+					<div>我的购物车</div>
+					<div class="shop-legend">
+						<img src="img/主页截图04.png">
+						<span>购物车中还没有商品，赶紧选购吧！</span>
+					</div>
+				</div>					
+				<ul class="else-search">
+					<li>热门搜索：</li>
+					<li>手机</li>
+					<li>电脑</li>
+					<li>年货</li>
+					<li>大家电</li>
+					<li>酒水</li>
+				</ul>
+				<ul class="nav-group">
+					<li><a href="作业-jd登陆页面.html" target="_blank">京东秒杀</a></li>
+					<li><a href="作业-jd登陆页面.html" target="_blank">品牌秒杀</a></li> |
+					<li><a href="作业-jd登陆页面.html" target="_blank">电脑办公</a></li>
+					<li><a href="作业-jd登陆页面.html" target="_blank">生活电器</a></li> 
+					<li><a href="作业-jd登陆页面.html" target="_blank">手机通讯</a></li>
+					<li><a href="作业-jd登陆页面.html" target="_blank">大家电</a></li>
+					<li><a href="作业-jd登陆页面.html" target="_blank">智能数码</a></li>
+					<li><a href="作业-jd登陆页面.html" target="_blank">饮料酒水</a></li> 
+					<li><a href="作业-jd登陆页面.html" target="_blank">家居家装</a></li>
+					<li><a href="作业-jd登陆页面.html" target="_blank">母婴童装</a></li>
+					<li><a href="作业-jd登陆页面.html" target="_blank">食品生鲜</a></li>
+					<li><a href="作业-jd登陆页面.html" target="_blank">个户家清</a></li>
+					<li><a href="作业-jd登陆页面.html" target="_blank">更多分类</a></li>
+				</ul>		
+			</div>
+			<div class="goods">
+				<div class="title-miaosha"></div>
+				<div class="timeline-list">
+					<ul>
+						<li>
+							<div >14:00</div>
+							<div id="first-list">
+								<span>正在秒杀</span>
+								<div>距结束00:34:47</div>
+							</div>
+						</li>
+						<li>
+							<div>16:00</div><div>即将开始</div>
+						</li>
+						<li>
+							<div>18:00</div><div>即将开始</div>
+						</li>
+						<li>
+							<div>20:00</div><div>即将开始</div>
+						</li>
+						<li>
+							<div>22:00</div><div>即将开始</div>
+						</li>
+					</ul>
+				</div>
+				<div class="goods-legend">
+					<ul>
+						<li>
+							<img src="img/秒杀页面02.png" />
+							<span>苏泊尔（SUPOR）电水壶电热水壶SWF17E20C全钢无缝</span>
+						</li>
+						<li>
+							<img src="img/秒杀页面03.png" />
+							<span>希捷（Seagate） Backup 1T 2.5英寸 USB3.0移动硬盘 </span>
+						</li>
+						<li>
+							<img src="img/秒杀页面04.png" />
+							<span>大洋世家 进口冷冻阿根廷红虾 L1 2kg 30-40只 盒装</span>
+						</li>
+						<li>
+							<img src="img/秒杀页面05.png" />
+							<span>惠普(HP)暗影精灵II代精灵绿 15.6英寸游戏笔记本)</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

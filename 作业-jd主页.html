@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>京东(JD.COM)-正品低价、品质保障、配送及时、轻松购物！</title>
+		<link rel="stylesheet" href="初始化.css" />
+		<style type="text/css">
+			body {
+				margin: 0 auto;
+				background-color: #FFFFFF;
+			}
+			
+			.container-content {
+				width: 1150px;
+				margin: 0 auto;
+			}
+			
+			.fixed {
+				position: absolute;
+				top: 0;
+				right: 0px;
+				position: fixed;
+			}
+			/*整体分左右两部分,这是左部分*/
+			
+			.container-content>div {
+				display: inline-block;
+				vertical-align: top;
+			}
+			
+			.container-left {
+				float: left;
+				height: 650px;
+				width: 190px;
+				background-color: #6E6568;
+				color: white;
+				font-weight: bold;
+				font-size: 16px;
+			}
+			
+			.container-left>img {
+				width: 190px;
+				height: 172px;
+			}
+			
+			.menu {
+				width: 190px;
+				height: 480px;
+				padding-top: 10px;
+				padding-left: 10px;
+			}
+			
+			.menu * {
+				margin: 0;
+				padding: 0px;
+				margin-bottom: 12px;
+			}
+			
+			.menu>dl a {
+				color: white;
+			}
+			/*整体分左右两部分,这是右部分*/
+			
+			.container-right {
+				width: 960px;
+				height: 650px;
+				background-color: #F6F6F6;
+			}
+			/*整体分左右两部分,这是右边上部分*/
+			
+			.top-tab>div,
+			.top-tab>ul>li,
+			.top-tab>ul {
+				display: inline-block;
+			}
+			
+			.top-tab {
+				height: 32px;
+				line-height: 32px;
+				text-align: justify;
+				background-color: #E3E4E6;
+				position: relative;
+			}
+			
+			.top-tab>div {
+				margin-left: 20px;
+			}
+			/*.opera li{
+			display:inline-block;
+		}
+		.opera{
+			position:absolute;
+			top:32px;;
+			left:-50px;
+			width:100px;
+			height:100px;
+			border:1px solid red;
+			
+		}
+		.top-tab:hover>.opera{
+			display:block;
+		}*/
+			
+			.top-tab>div:before {
+				background-image: url(img/主页截图05.png);
+				width: 15px;
+				height: 18px;
+				content: "";
+				display: inline-block;
+			}
+			
+			.top-tab>ul {
+				margin-left: 120px;
+				font-size: 14px;
+				color: #999999;
+			}
+			
+			.search {
+				width: 950px;
+				height: 140px;
+				background-color: #F6F6F6;
+			}
+			
+			.search [type=text] {
+				width: 450px;
+				height: 35px;
+				vertical-align: top;
+				margin-left: 130px;
+			}
+			
+			.search>form {
+				vertical-align: top;
+				padding-top: 26px;
+			}
+			
+			.search [type=image] {
+				width: 50px;
+				height: 38px;
+				line-height: 38px;
+				background-color: red;
+			}
+			
+			.search>div,
+			.shop-car,
+			.search>form,
+			.search>ul,
+			.search>ul>li {
+				display: inline-block;
+			}
+			
+			.shop-car {
+				position: relative;
+				height: 34px;
+				width: 150px;
+				line-height: 34px;
+				vertical-align: top;
+				text-align: center;
+				margin-top: 26px;
+				margin-left: 18px;
+				border: 1px solid #E3E4E6;
+				background-color: white;
+			}
+			
+			.shop-legend {
+				width: 308px;
+				height: 70px;
+				position: absolute;
+				top: 34px;
+				right: 0px;
+				color: white;
+				border: 1px solid #999999;
+				font-size: 14px;
+				display: none;
+				color: #999999;
+			}
+			
+			.shop-legend>span {
+				display: inline-block;
+				vertical-align: top;
+				margin-top: 15px;
+			}
+			
+			.shop-car:hover>.shop-legend {
+				display: block;
+				background-color: white;
+			}
+			
+			.else-goods {
+				margin-left: 130px;
+				font-size: 12px;
+				color: #999999;
+			}
+			
+			.else-goods>li:nth-child(1) {
+				color: red;
+			}
+			
+			.search>img {
+				margin-right: 0px;
+			}
+			
+			#newyear {
+				margin-left: 100px;
+			}
+			
+			.nav-group>li {
+				font-size: 16px;
+				margin-left: 10px;
+				color: #555555;
+			}
+			
+			.nav-group>li>a {
+				color: #555555;
+			}
+			
+			.nav-group {
+				vertical-align: bottom;
+				margin-bottom: 10px;
+				font-weight: bold;
+				margin-left: 30px;
+			}
+			
+			.nav-group+img {
+				margin-left: 74px;
+			}
+			/*整体分左右两部分,这是右边下部分*/
+			
+			.bannner {
+				width: 930px;
+				height: 478px;
+				margin-left:5px;
+			}
+			/*整体分左右两部分,这是右边下左部分*/
+			
+			.bannner>div {
+				display: inline-block;
+				box-sizing:border-box;
+			}
+			
+			.pic {
+				width: 730px;
+				height: 478px;
+			}
+			
+			.pic-big {
+				width: 730px;
+				height: 320px;
+			}
+			
+			.pic-small {
+				width: 355px;
+				margin-top: 5px;
+				height: 150px;
+			}
+			
+			#pic-item {
+				margin-left: 12px;
+			}
+			/*整体分左右两部分,这是下边部分的下右部分*/
+			
+			.tips {
+				float: right;
+				width: 190px;
+				height: 478px;
+				color: #696564;
+				padding-top: 10px;
+				background-color: white;
+				padding-left: 10px;
+				margin-left: 10px;
+			}
+			
+			.title,
+			.title li {
+				display: inline-block;
+			}
+			
+			.title {
+				border-top: 1px solid #E6E6E6;
+				border-bottom: 1px solid #E6E6E6;
+				width: 100%;
+				height: 26px;
+				vertical-align: top;
+				padding-top: 10px;
+				color: #2D343A;
+				margin-bottom: 15px;
+			}
+			
+			.title li:nth-child(1) {
+				border-right: 1px solid #E6E6E6;
+				text-align: left;
+				padding-right: 5px;
+			}
+			
+			.title li:nth-child(3) {
+				text-align: right;
+			}
+			
+			.member * {
+				font-size: 14px
+			}
+			
+			.member>img {
+				float: left;
+			}
+			
+			.member a {
+				display: inline-block;
+				margin-top: 5px;
+				margin-left: 5px;
+			}
+			
+			.member>div {
+				margin-top: 20px;
+				font-size: padding-left: 20px;
+				margin-left: 15px;
+				margin-bottom: 15px;
+			}
+			
+			.member>div>span {
+				display: inline-block;
+				border: 1px solid red;
+				width: 72px;
+				height: 22px;
+				text-align: center;
+				vertical-align: middle;
+				padding-top: 5px;
+			}
+			
+			.list {
+				font-size: 14px;
+			}
+			
+			.list>li {
+				margin-bottom: 8px;
+			}
+			
+			.telephone-charge {
+				font-size: 13px;
+			}
+			
+			.telephone-charge>li:nth-child(1) {
+				margin-bottom: 10px;
+			}
+			
+			.telephone-charge>li:nth-child(2)>input {
+				margin-bottom: 15px;
+				width: 100px;
+				height: 20px;
+			}
+			
+			.telephone-charge>li:nth-child(3)>select {
+				margin-bottom: 15px;
+				width: 60px;
+				height: 20px;
+			}
+			
+			.telephone-charge>li:nth-child(4)>input {
+				margin-bottom: 5px;
+				width: 90px;
+				height: 20px;
+				background-color: red;
+				border: none;
+				color: white;
+			}
+			
+			.telephone-charge>li:nth-child(5):before {
+				width: 35px;
+				height: 20px;
+				content: "";
+				display: inline-block;
+				background-image: url(img/主页截图11.png);
+				margin-top: 10px;
+			}
+			
+			.telephone-charge>li:nth-child(5) * {
+				vertical-align: top;
+				display: inline-block;
+				margin-top: 13px;
+			}
+			
+			/*这是主页的下部区域  bottom-one*/
+			.container-bottom-one *{
+				border:1px solid green;
+				width:100%;
+				box-sizing: border-box;
+			}
+			.bottom-one {
+				width: 1150px;height:55px;
+				margin:0 auto;
+				background-color:#E01222;
+				color:white;
+				
+			}
+			.bottom-one-left{
+				float:left;
+				width:304px;
+				height:49px;
+				margin-left: 30px;
+			}
+			.bottom-one-left *{
+				vertical-align: middle;
+				line-height:49px ;
+			}
+			.bottom-one-left>a{
+				font-size: 14px;
+			}
+			.bottom-one-left>i>img{
+				width:34px;
+				height:40px;
+			}
+			.bottom-one-left>span{
+				font-size: 26px;
+				
+			}
+			.bottom-one-right{
+				float:right;
+				width:260px;
+				height:55px;
+			}
+			.bottom-one-right>div{
+				display: inline-block;
+			}
+			.bottom-one-legend{
+				width:1150px;
+				height:250px;
+			}
+			.one-legend-goods{
+				width:200px;
+				height:225px;
+				padding:0 14px 0 15px;
+			}
+			.one-legend-goods>p{
+				width:160px;
+				height:31px;
+			}
+			.legend-goods{
+				width:160px;
+				height:196px;
+				margin:0 auto;
+				position: relative;
+			}
+			.legend-goods>img{
+				width:130px;
+				height:130px;
+				margin:17px 0;
+				text-align: center;
+			}
+			.legend-goods>p{
+				color:rgb(153, 153, 153);
+				font-size: 12px;
+
+			}
+			.goods-pic>span{
+				background:url(img/icons-2.png) no-repeat ;
+				width:30px;
+				height:40px;
+				position: absolute;
+				top:0;
+				left:0px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="fixed">
+			<img src="img/Image 1.jpg" />
+		</div>
+		<div class="container">
+			<div class="container-content">
+				<div class="container-left">
+					<img src="img/主页截图01.png">
+					<div class="menu">
+						<dl>
+							<dd>
+								<a href="作业-jd秒杀页面.html" target="_blank">家用电器</a>
+							</dd>
+							<dd>
+								<a href="作业-jd秒杀页面.html" target="_blank">手机/运营商/数码</a>
+							</dd>
+							<dd>
+								<a href="作业-jd秒杀页面.html" target="_blank">电脑办公</a>
+							</dd>
+							<dd>
+								<a href="作业-jd秒杀页面.html" target="_blank">家居/家具/家装/厨具</a>
+							</dd>
+							<dd>
+								<a href="作业-jd秒杀页面.html" target="_blank">男装/女装/童装/内衣</a>
+							</dd>
+							<dd>
+								<a href="作业-jd秒杀页面.html" target="_blank">个护化妆/清洁用品/宠物</a>
+							</dd>
+							<dd>
+								<a href="作业-jd秒杀页面.html" target="_blank">鞋靴/箱包/珠宝/奢侈品</a>
+							</dd>
+							<dd>
+								<a href="作业-jd秒杀页面.html" target="_blank">运动/户外/钟表</a>
+							</dd>
+							<dd>
+								<a href="作业-jd秒杀页面.html" target="_blank">汽车/汽车用品</a>
+							</dd>
+							<dd>
+								<a href="作业-jd秒杀页面.html" target="_blank">母婴/玩具乐器</a>
+							</dd>
+							<dd>
+								<a href="作业-jd秒杀页面.html" target="_blank">食品/酒类/生鲜/特产</a>
+							</dd>
+							<dd>
+								<a href="作业-jd秒杀页面.html" target="_blank">医药保健</a>
+							</dd>
+							<dd>
+								<a href="作业-jd秒杀页面.html" target="_blank">图书/音像/电子书</a>
+							</dd>
+							<dd>
+								<a href="作业-jd秒杀页面.html" target="_blank">机票/酒店/旅游/生活</a>
+							</dd>
+							<dd>
+								<a href="作业-jd秒杀页面.html" target="_blank">理财/众筹/白条/保险</a>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="container-right">
+					<div class="top-tab">
+						<div>北京</div>
+						<!--<ul class="opera">
+							<li>北京</li>
+							<li>上海</li>
+							<li>天津</li>
+							<li>重庆</li>
+							<li>河北</li>
+						</ul>					-->
+						<ul>
+							<li>你好，请登录 <span>免费注册</span></li> |
+							<li>我的订单</li> |
+							<li>我的京东</li> |
+							<li>京东会员</li> |
+							<li>企业采购</li> |
+							<li>客户服务</li> |
+							<li>网站导航</li> |
+							<li>手机京东</li>
+						</ul>
+					</div>
+					<div class="search">
+						<form>
+							<input type="text" name="">
+							<!--
+							--><input type="image" src="img/主页截图02.png" />
+						</form>
+						<div class="shop-car">
+							<div>我的购物车</div>
+							<div class="shop-legend">
+								<img src="img/主页截图04.png">
+								<span>购物车中还没有商品，赶紧选购吧！</span>
+							</div>
+						</div>
+						<img src="img/主页截图03.png">
+						<ul class="else-goods">
+							<li>东家菜</li>
+							<li>手机专场</li>
+							<li>花肥</li>
+							<li>自营3免1</li>
+							<li>亿元红包</li>
+							<li>玩具车</li>
+							<li>袜子男</li>
+							<li>费列罗</li>
+							<li>羽毛球拍</li>
+						</ul>
+						<ul class="nav-group">
+							<li>
+								<a href="作业-jd秒杀页面.html" target="_blank">秒杀</a>
+							</li>
+							<li>
+								<a href="作业-jd秒杀页面.html" target="_blank">优惠券</a>
+							</li>
+							<li>
+								<a href="作业-jd秒杀页面.html" target="_blank">闪购</a>
+							</li>
+							<li>
+								<a href="作业-jd秒杀页面.html" target="_blank">拍卖</a>
+							</li> |
+							<li>
+								<a href="作业-jd秒杀页面.html" target="_blank">服装城</a>
+							</li>
+							<li>
+								<a href="作业-jd秒杀页面.html" target="_blank">京东超市</a>
+							</li>
+							<li>
+								<a href="作业-jd秒杀页面.html" target="_blank">生鲜</a>
+							</li>
+							<li>
+								<a href="作业-jd秒杀页面.html" target="_blank">全球购</a>
+							</li> |
+							<li>
+								<a href="作业-jd秒杀页面.html" target="_blank">京东金融</a>
+							</li>
+						</ul>
+						<img src="img/主页截图06.png" id="newyear">
+					</div>
+					<div class="bannner">
+						<div class="pic">
+							<img src="img/主页截图07.png" class="pic-big">
+							<img src="img/主页截图08.png" class="pic-small">
+							<img src="img/主页截图09.png" class="pic-small" id="pic-item">
+						</div>
+						<div class="tips">
+							<div class="member">
+								<img src="img/主页截图10.png">
+								<span>Hi,欢迎来到京东！</span>
+								<a href="">登陆</a>
+								<a href="">注册</a>
+								<div>
+									<span>新人福利</span>
+									<span>PLUS会员</span>
+								</div>
+							</div>
+							<div class="sale">
+								<ul class="title">
+									<li>促销</li>
+									<li>公告</li>
+									<li>更多</li>
+								</ul>
+								<ul class="list">
+									<li>图书满百减，对联年货天天</li>
+									<li>潘婷 新年尽情染烫</li>
+									<li>亿元新年红包任性抢</li>
+									<li>看东家菜，买好食材</li>
+
+								</ul>
+								<ul class="title">
+									<li>话费</li>
+									<li>机票</li>
+									<li>酒店</li>
+									<li>游戏</li>
+								</ul>
+								<ul class="telephone-charge">
+									<li>
+										<span>话费充值</span>
+										<span>流量充值</span>
+										<span>套餐变更</span>
+									</li>
+									<li>
+										号码 <input type="text" name="" placeholder="移动/联通/电信">
+									</li>
+									<li>
+										面值
+										<select>
+											<option>100元</option><span>￥98.0-￥100.0</span>
+											<option>50元</option>
+										</select>
+									</li>
+									<li>
+										<input type="submit" value="快速充值">
+									</li>
+									<li>
+										<span>抢5元话费券</span>
+									</li>
+								</ul>
+							</div>
+							<div></div>
+
+						</div>
+					</div>
+				</div>
+				<!--<div class="container-bottom-one">
+					<div class="bottom-one">
+						<div class="bottom-one-left">
+							<i>
+								<img src="img/主页截图13.png"/>
+							</i>
+							<h3>
+								京东秒杀
+							</h3>
+							<span>京东秒杀</span>
+							<a>
+								总有你想不到的特价
+							</a>
+						</div>
+						<div class="bottom-one-right">
+							<span>当前场次</span>
+							<div>
+								14:28：24
+							</div>
+							<span>后结束抢购</span>
+						</div>
+					</div>
+					<div class="bottom-one-legend">
+						<ul>
+							<li class="one-legend-goods">
+								<div class="legend-goods">
+									<div class="goods-pic">
+										<span id="">
+											鲜果
+										</span>
+									</div>
+									<img src="img/主页截图12.png" />
+									<p>佳沛 zespri 佳沛意大利阳光金奇异果36# 6个 单果约90-105g</p>
+								</div>
+								<p>
+									<span>
+										<i>¥</i>
+										<span>29.90</span>
+									</span>
+									<span>
+										<i>¥</i>
+										<span>46.00</span>
+									</span>
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>-->
+			</div>
+		</div>
+	</body>
+
+</html>

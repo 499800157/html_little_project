@@ -1,0 +1,29 @@
+1、前边加一个伪元素 设置背景图
+[type=text]:before{
+  				width:33px;height:39px;
+  				content:"wdao sad";
+  				display:inline-block;
+  				background-image:url(img/登陆页面截图3.png);
+  			}
+  			[type=password]:before{
+  				width:33px;height:39px;
+  				content:"";
+  				display:inline-block;
+  				background:url(img/登陆页面截图4.png) #F3F3F3;
+  			}
+
+2、两端对齐
+.form-item{
+  				text-align: justify;
+  			} 	
+3、窗口固定
+		.fixed{			
+			float:right;
+			position:fixed;
+		} 
+4、统一规定的样式之后改个别样式会受统一样式影响    (方法：相对定位)
+			.timeline-list>ul>li>div{				
+				vertical-align: top;
+				margin-top:20px;								
+			}
+										

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>京东-欢迎登录</title>
+		 <link rel="stylesheet" href="初始化.css"/>
+		<style type="text/css">
+			
+			body{
+				width:1150px;
+				margin:0 auto;
+				background-color:#FFFFFF;
+				box-sizing:border-box;
+			}
+			/*整体分上、中、下三部分,这是上部*/
+			.top{
+				height:80px;
+				
+			}
+			.top *{
+				vertical-align: middle;
+				margin-top:10px;			
+			}
+			.top>b{
+				font-size:30px;
+				color:#3A3A3A;
+			}
+			.top>img{
+				margin-left:143px;
+			}
+			.top>span{
+				float:right;
+				margin-top: 55px;
+				margin-right:187px;
+				font-size:14px;
+				color:#999999;
+			}
+			.top>span:before{
+				width:20px;
+				height:15px;
+				font-size:15px;
+				line-height: 5px;
+				background:url(img/icons.png) -64px -69px;			
+				display:inline-block;
+				content:"...";
+				vertical-align:middle;
+				text-align: left;
+				color:white;
+				text-align: left;
+				letter-spacing:0px;;
+			}
+			/*整体分上、中、下三部分,这是中部*/
+			.middle{
+				height:473px;
+				background:#6D1AB0;
+				color:white;
+				margin-bottom: 23px;
+			}
+			/*中间部分-左半部分*/
+			.middle-left{
+				width:420px;/*640px*/
+				display: inline-block;
+				margin-left:195px;
+				margin-top:40px;
+			}
+			.middle-left>img{
+				width:70px;
+				height:60px;
+						
+			}
+			.middle-left span{
+				display: inline-block;
+				font-size:40px;
+				vertical-align: top;
+				margin-top:20px;
+			}
+			.middle-left ul{
+				margin-top:40px;
+				font-weight:900;
+				margin-left:25px;
+			
+			}
+			.middle-left>ul>li:nth-child(1){
+				font-size:40px;
+				width:165px;
+				border-bottom:1px solid #B93BE4;				
+			}
+			.middle-left>ul>li:nth-child(2){
+				font-size:40px;
+				color:#FDE90C;
+				letter-spacing:7px;
+				margin-bottom:10px;			
+			}
+			.middle-left>ul>li:nth-child(3){
+				font-size:30px;	
+				margin-bottom:11px;
+			}
+			.middle-left>ul>li:nth-child(4){
+				font-size:20px;	
+				margin-bottom:11px;
+			}
+			.middle-left>ul>li:nth-child(5){
+				font-size:20px;	
+				color:#3F1200;
+				background-color:#FFEC0C;
+				width:265px;
+				text-align:center;
+				line-height:30px;
+			}
+			/*中间部分-右半部分*/
+			.middle-right{
+				width:350px;height:360px;
+				display: inline-block;
+				vertical-align: top;
+				margin-top:40px;
+				background-color:#FFFFFF;
+				color:#62656A;
+				
+				
+			}
+			.login>ul>li{
+				display:inline-block;
+				width:48%;height:55px;
+				font-size:18px;	
+				line-height: 55px;
+				text-align: center;
+				margin-bottom:42px;
+				border-bottom: 1px solid #F5F5F5;
+				border-right:1px solid #F5F5F5;
+			}
+			.ipt{
+				text-align: center;		
+					
+			}
+  			.ipt>input{
+  				width:266px;
+  				height:39px;
+  				line-height: 39px;
+  				vertical-align:top;
+  				margin-bottom:22px;
+  			}
+  			.ipt>img{
+  				width:33px;height:41px;
+  				border:1px solid #CACACA;	
+  			}
+  			.middle-right>ul>li{
+  				display:inline-block;
+  				margin-bottom:22px;
+  			}
+  			.form-item>input{
+  				margin-left: 20px;
+  				margin-bottom:22px;
+  			}
+  			.form-item>span{
+  				margin-left: 157px;
+  			}
+  			.login [type=submit]{
+  				width:303px;
+  				height:39px;
+  				/*text-align: center;*/
+  				margin-left:23px;
+  				background-color: #E3393C;
+  				color:white;
+  				font-size: 20px;
+  				font-weight: 400;
+  				border:none;
+  				margin-bottom:22px;
+  				/*letter-spacing: 20px;
+  				text-align: center;*/
+  			}
+  			.login-method>li:nth-child(1):before{
+  				width: 17px;height:17px;
+  				content:"";
+  				display:inline-block;
+  				background-image: url(img/icons.png);
+  				background-position: 0 -164px;
+  				background-repeat: no-repeat;
+ 				vertical-align: middle;
+ 				margin-top:-5px;
+ 				margin-left: 21px;
+  			}
+  			.login-method>li:nth-child(2):before{
+  				padding-top:0px;
+  				width: 17px;height:17px;
+  				content:"";
+  				display:inline-block;
+  				background-image: url(img/登陆页面截图5.png);
+ 				background-size: 23px;
+ 				background-position:-3px -2px;
+ 				background-repeat: no-repeat;
+ 				vertical-align: middle;
+ 				margin-top:-5px;
+  			}
+  			.login-method>li:nth-child(4){
+  				margin-left: 20px;
+  			}
+  			.login-method>li:nth-child(4):before{
+  				
+  				width: 17px;height:17px;
+  				content:"";
+  				display:inline-block;
+  				background-image: url(img/登陆页面截图6.png);
+ 				background-size: 23px;
+ 				background-position:-3px -2px;
+ 				background-repeat: no-repeat;
+ 				vertical-align: middle;
+ 				margin-top:0px;
+  			}
+			/*整体分上、中、下三部分,这是下部*/
+			.bottom{
+				height:107px;
+				text-align: center;
+				color:#666666;
+			}
+			.bottom-else{
+				margin-bottom:20px;
+			}
+			.bottom-else>a{
+				color:#666666;
+			}
+		</style>
+	</head>	
+	<body>
+		<div class="container">
+			<div class="top">
+				<img src="img/登陆页面截图01.png" title="京东" alt="京东">
+				<b>欢迎登陆</b>
+				<span><a href="作业-jd主页.html"target="_blank">登陆页面，调查问卷</a></span>
+			</div>
+			<div class="middle">
+				<div class="middle-left">
+					<div class="left-title">
+						<img src="img/登陆页面截图2.png" />
+						<span>1.4-2.3</span>
+					</div>
+					<ul>
+						<li>疯抢年货</li>
+						<li>低至1折</li>
+						<li>抢亿元无门槛现金红包</li>
+						<li>冰洗每满1000减100 上不封顶</li>
+						<li>电视买一送一(限个别商品)</li>
+					</ul>
+				</div>
+				<div class="middle-right">
+					<form class="login" >
+						<ul>
+							<li>扫码登陆</li>
+							<li>账户登陆</li>
+						</ul>
+						<div class="ipt">
+							<img src="img/登陆页面截图3.png"><input type="text"  name="" id="" value="" placeholder="邮箱/用户名/已验证手机" />
+						</div>
+						<div class="ipt">
+							<img src="img/登陆页面截图4.png"><input type="password" name="" id="" value="" placeholder="密码"/>
+						</div>
+						<div class="form-item">
+							
+								<input type="checkbox" name="" id="" value="" />自动登陆
+							
+							<span>忘记密码</span>
+						</div>
+						<a href="#作业-jd登陆页面.html"><input type="submit" name="" id="" value="登&nbsp&nbsp&nbsp陆" /></a>
+					</form>
+					<ul class="login-method">
+						<li>QQ</li> |
+						<li>微信</li> |
+						<li>京东钱包</li>
+						<li>立即注册</li>
+					</ul>
+				</div>				
+			</div>
+			<div class="bottom">
+				<div class="bottom-else">
+					<a target="_blank" href="" >关于我们</a> |
+					<a target="_blank" href="" >联系我们</a> |
+					<a target="_blank" href="" >人才招聘</a> |
+					<a target="_blank" href="" >商家入驻</a> |
+					<a target="_blank" href="" >广告服务</a> |
+					<a target="_blank" href="" >手机京东</a> |
+					<a target="_blank" href="" >友情链接</a> |
+					<a target="_blank" href="" >销售联盟</a> |
+					<a target="_blank" href="" >京东社区</a> |
+					<a target="_blank" href="" >京东公益</a> |
+					<a target="_blank" href="" >English Site</a>
+				</div>
+				<div class="bottom-copy">
+					Copyright &copy; 2004-2017 冯森jd.com 版权所有
+				</div>
+			</div>
+		</div>	
+	</body>
+</html>

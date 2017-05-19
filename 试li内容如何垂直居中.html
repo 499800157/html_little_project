@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style>  
+*{  
+    margin:0px;  
+    padding:0px;  
+}  
+body{  
+    padding:10px;  
+}  
+.line{  
+    width:100%;  
+    height:54px;;  
+    border:1px solid #F00;  
+        overflow: hidden;  
+}  
+.left{  
+    width:50%;  
+    background:#cce9ff;  
+    display:inline-block;  
+        line-height:54px;  
+        float: left;  
+}  
+.middle{  
+    width:25%;  
+    background:#ffffff;  
+    display:inline-block;  
+    text-align:center;  
+        float: left;  
+}  
+  
+.b0{  
+    margin:0px;  
+    padding:0px;  
+    text-align:left;  
+    background:#cce9ff;  
+}  
+.b1{  
+    text-align:center;  
+}  
+.b2{  
+    text-align:right;  
+    background:#69F;  
+}  
+  
+.right{  
+    width:25%;  
+    background:#cce9ff;  
+    display:inline-block;  
+    text-align:right;  
+        line-height:54px;  
+        float: left;  
+}  
+  
+	</style>
+	<body>
+		<div data-role="page" id="page1">  
+	    	<div data-role="header">  
+	        	<h1>测试左中右结构</h1>  
+	    	</div>  
+		    <div data-role="content">  
+		        <ul data-role="listview" data-inline="false" >  
+		            <li style="background:#CFC;">  
+		                <div class="line">
+		                	<div class="left">我要垂直居中</div>
+		                	<div class="middle">
+		                		<div class="b0">B0</div>
+		                		<div class="b1">B1</div>
+		                		<div class="b2">B2</div>
+		                	</div>
+		                	<div class="right">我要垂直居中</div>  
+		                </div>  
+		            </li>  	             
+		        </ul>  
+		    </div>  
+		</div>  
+	</body>
+</html>
